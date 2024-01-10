@@ -90,8 +90,189 @@ npm start
 
 <h3 align="center"> Give it a 🌟 if you 🧡 this repository </h3>
 
----
+## <h3 align="center"> Live 🌟 https://docthubconnect.onrender.com/ 🧡 </h3>
 
 <p align="right"><a href="#top">Back to Top</a></p>
 
 </div>
+
+## App structure
+
+```
+└── 📁controllers
+    └── appointmentController.js
+    └── doctorController.js
+    └── notificationController.js
+    └── userController.js
+└── 📁db
+    └── conn.js
+└── 📁middleware
+    └── auth.js
+└── 📁models
+    └── appointmentModel.js
+    └── doctorModel.js
+    └── notificationModel.js
+    └── userModel.js
+└── 📁routes
+    └── appointRoutes.js
+    └── doctorRoutes.js
+    └── notificationRouter.js
+    └── userRoutes.js
+└── README.md
+└── package.json
+└── server.js
+└── 📁client
+    └── .env
+    └── .env.example
+    └── .gitignore
+    └── 📁build
+        └── android-chrome-192x192.png
+        └── android-chrome-512x512.png
+        └── apple-touch-icon.png
+        └── asset-manifest.json
+        └── favicon-16x16.png
+        └── favicon-32x32.png
+        └── favicon.ico
+        └── index.html
+        └── robots.txt
+        └── site.webmanifest
+        └── 📁static
+            └── 📁css
+                └── 110.a9c2ec09.chunk.css
+                └── 110.a9c2ec09.chunk.css.map
+                └── 158.5346ba9c.chunk.css
+                └── 158.5346ba9c.chunk.css.map
+                └── 564.ebec8f91.chunk.css
+                └── 564.ebec8f91.chunk.css.map
+                └── 702.7130310b.chunk.css
+                └── 702.7130310b.chunk.css.map
+                └── 796.3d3341d0.chunk.css
+                └── 796.3d3341d0.chunk.css.map
+                └── 809.8d44b6ef.chunk.css
+                └── 809.8d44b6ef.chunk.css.map
+                └── 95.6d2ec8a7.chunk.css
+                └── 95.6d2ec8a7.chunk.css.map
+                └── 987.28e525c5.chunk.css
+                └── 987.28e525c5.chunk.css.map
+                └── main.4feeeabb.css
+                └── main.4feeeabb.css.map
+            └── 📁js
+                └── 110.a45addc4.chunk.js
+                └── 110.a45addc4.chunk.js.map
+                └── 158.59558118.chunk.js
+                └── 158.59558118.chunk.js.map
+                └── 208.52429264.chunk.js
+                └── 208.52429264.chunk.js.map
+                └── 355.b2b03b2b.chunk.js
+                └── 355.b2b03b2b.chunk.js.map
+                └── 373.d031bc9d.chunk.js
+                └── 373.d031bc9d.chunk.js.map
+                └── 564.040d62cb.chunk.js
+                └── 564.040d62cb.chunk.js.map
+                └── 702.395621bd.chunk.js
+                └── 702.395621bd.chunk.js.map
+                └── 796.72a1f87f.chunk.js
+                └── 796.72a1f87f.chunk.js.map
+                └── 809.ebefa25b.chunk.js
+                └── 809.ebefa25b.chunk.js.map
+                └── 856.2a834a03.chunk.js
+                └── 856.2a834a03.chunk.js.map
+                └── 95.56a4beb3.chunk.js
+                └── 95.56a4beb3.chunk.js.map
+                └── 987.e9cad49f.chunk.js
+                └── 987.e9cad49f.chunk.js.map
+                └── main.6d9a7b52.js
+                └── main.6d9a7b52.js.LICENSE.txt
+                └── main.6d9a7b52.js.map
+            └── 📁media
+                └── aboutimg.af2db4b9f307d04f8745.jpg
+                └── heroimg.8bbd2437f7c9d842026c.jpg
+    └── package-lock.json
+    └── package.json
+    └── 📁public
+        └── android-chrome-192x192.png
+        └── android-chrome-512x512.png
+        └── apple-touch-icon.png
+        └── favicon-16x16.png
+        └── favicon-32x32.png
+        └── favicon.ico
+        └── index.html
+        └── robots.txt
+        └── site.webmanifest
+    └── 📁src
+        └── App.js
+        └── 📁components
+            └── AboutUs.jsx
+            └── AdminApplications.jsx
+            └── AdminAppointments.jsx
+            └── AdminDoctors.jsx
+            └── BookAppointment.jsx
+            └── Contact.jsx
+            └── DoctorApply.jsx
+            └── DoctorCard.jsx
+            └── Empty.jsx
+            └── Footer.jsx
+            └── Hero.jsx
+            └── HomeCircles.jsx
+            └── Loading.jsx
+            └── Navbar.jsx
+            └── Sidebar.jsx
+            └── Users.jsx
+        └── 📁helper
+            └── apiCall.js
+            └── convertImage.js
+        └── 📁images
+            └── aboutimg.jpg
+            └── applications.png
+            └── bookappointment.png
+            └── docapply.png
+            └── doctorappointments.png
+            └── doctornotif.png
+            └── doctors.png
+            └── full_pic.png
+            └── heroimg.jpg
+            └── home.png
+            └── notifications.png
+            └── profile.png
+            └── signin.png
+            └── signup.png
+            └── userappointments.png
+            └── usernotif.png
+            └── users.png
+        └── index.js
+        └── 📁middleware
+            └── route.js
+        └── 📁pages
+            └── ApplyDoctor.jsx
+            └── Appointments.jsx
+            └── Dashboard.jsx
+            └── Doctors.jsx
+            └── Error.jsx
+            └── Home.jsx
+            └── Login.jsx
+            └── Notifications.jsx
+            └── Profile.jsx
+            └── Register.jsx
+        └── 📁redux
+            └── 📁reducers
+                └── rootSlice.js
+            └── store.js
+        └── 📁styles
+            └── app.css
+            └── bookappointment.css
+            └── contact.css
+            └── doctorapply.css
+            └── doctorcard.css
+            └── doctors.css
+            └── error.css
+            └── footer.css
+            └── hero.css
+            └── homecircles.css
+            └── loading.css
+            └── navbar.css
+            └── notification.css
+            └── profile.css
+            └── register.css
+            └── sidebar.css
+            └── user.css
+```
