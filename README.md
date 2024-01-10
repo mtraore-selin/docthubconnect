@@ -96,6 +96,34 @@ npm start
 
 </div>
 
+## Deployment on render log:
+
+INFO==> It looks like we don't have access to your repo, but we'll try to clone it anyway.
+INFO==> Cloning from https://github.com/mtraore-selin/docthubconnect
+INFO==> Checking out commit 3dedc0ae4872dddb4498ca43d169efd9144b674a in branch master
+INFO==> Downloading cache...
+INFO==> Transferred 58MB in 7s. Extraction took 2s.
+INFO==> Using Node version 20.10.0 (default)
+INFO==> Docs on specifying a Node version: https://render.com/docs/node-version
+INFO==> Running build command 'npm install'...
+INFO
+INFOup to date, audited 251 packages in 639ms
+INFO
+INFO20 packages are looking for funding
+INFO run `npm fund` for details
+INFO
+INFOfound 0 vulnerabilities
+INFO==> Uploading build...
+INFO==> Build uploaded in 8s
+INFO==> Build successful 🎉
+INFO==> Deploying...
+INFO==> Using Node version 20.10.0 (default)
+INFO==> Docs on specifying a Node version: https://render.com/docs/node-version
+INFO==> Running 'node server.js'
+INFOServer is running on http://https://docthubconnect.onrender.com:5000
+INFODB connected
+INFOYour service is live 🎉
+
 ## App structure
 
 ```

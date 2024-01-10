@@ -1,11 +1,13 @@
 const express = require("express");
 const cors = require("cors");
+const path = require("path");
+
 require("dotenv").config();
 require("./db/conn");
+
 const userRouter = require("./routes/userRoutes");
 const doctorRouter = require("./routes/doctorRoutes");
 const appointRouter = require("./routes/appointRoutes");
-const path = require("path");
 const notificationRouter = require("./routes/notificationRouter");
 
 const app = express();
@@ -18,6 +20,8 @@ app.use("/api/user", userRouter);
 app.use("/api/doctor", doctorRouter);
 app.use("/api/appointment", appointRouter);
 app.use("/api/notification", notificationRouter);
+
+// Serve up static assets
 app.use(express.static(path.join(__dirname, "./client/build")));
 
 // Health check route
